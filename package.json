@@ -1,0 +1,20 @@
+{
+  "name": "ece-wepapp-abessolo-affadjene",
+  "version": "1.0.0",
+  "description": "Duo du cours de technologies Web  affadjen test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene/issues"
+  },
+  "homepage": "https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene#readme"
+}
