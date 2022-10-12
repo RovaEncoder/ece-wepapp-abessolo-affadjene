@@ -1,4 +1,5 @@
-// Import a module
+const url = require('url')
+const qs = require('querystring')
 const http = require('http')
 
 const content = '<!DOCTYPE html>' +
@@ -6,17 +7,17 @@ const content = '<!DOCTYPE html>' +
 '    <head>' +
 '        <meta charset="utf-8" />' +
 '        <title>ECE AST</title>' +
-'    </head>' + 
+'    </head>' +
 '    <body>' +
-'       <p>Hello Class, we are improving our NPM level</p>' +
+'       <p>Hello class, its a poor code, do not worry!</p>' +
 '    </body>' +
 '</html>'
 
-//callback function
 const serverHandle = function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end(content);
-  }
-  
-  const server = http.createServer(serverHandle);
-  server.listen(8080)
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(content);
+  res.end();
+}
+
+const server = http.createServer(serverHandle);
+server.listen(8080)
