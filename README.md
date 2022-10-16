@@ -45,15 +45,3 @@ git clone https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene.git
 ```
 npm start
 ```
-
-
-
-
-
-
-
-
-
-
-
-
