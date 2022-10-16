@@ -36,8 +36,17 @@ if you don't have npm install: [click me](https://nodejs.org/en/)
 
 **first : open a file and clone the project by using this command**
 
+HTTPS mode
+
 ```
 git clone https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene.git
+```
+
+SSH mode
+
+```
+git clone git@github.com:RovaEncoder/ece-wepapp-abessolo-affadjene.git
+
 ```
 
 **second : run the project**

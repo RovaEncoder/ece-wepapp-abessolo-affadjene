@@ -53,8 +53,6 @@ const hello = (req, res) => {
 };
 
 const home = (req, res) => {
-	const route = url.parse(req.url);
-	const path = route.pathname;
 	fs.readFile("./content/explanation.html", function (err, data) {
 		res.writeHead(200, { "Content-Type": "text/html" });
 		res.write(data);
@@ -63,17 +61,13 @@ const home = (req, res) => {
 };
 
 const erreur = (req, res) => {
-	const route = url.parse(req.url);
-	const path = route.pathname;
 	res.writeHead(404, { "Content-Type": "text/html" });
 	res.end("404 Not Found");
 };
 
 const about = (req, res) => {
-	const route = url.parse(req.url);
-	const path = route.pathname;
-	const params = qs.parse(route.query);
 	fs.readFile("./content/content.json", function (err, data) {
+		if (err) throw err;
 		res.writeHead(200, { "Content-Type": "application/json" });
 		res.write(data);
 		res.end();
