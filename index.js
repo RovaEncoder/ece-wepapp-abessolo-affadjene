@@ -1,6 +1,11 @@
-const http = require("http");
-//import of root
-const port = 8080;
-const handles = require("./handles");
-const server = http.createServer(handles.serverHandle);
-server.listen(port);
+const express = require("express");
+const app = express();
+const db = require("./src/db/db.js");
+const port = 3000;
+
+const getArticleById = require("./src/routes/getArticleById")(app);
+// app.use("/src/routes/getArticleById", getArticleById);
+
+// app.send(test);
+// // require("./src/routes/getAllArticles")(db, app);
+app.listen(port, () => console.log("Hello Express !"));
