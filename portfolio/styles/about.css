@@ -114,7 +114,7 @@
     background-color: rgba(12, 11, 76, 0.067);;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     width: 25%;
     gap: 10px;
@@ -156,7 +156,7 @@
 
 
 .image-equipe img{
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
    }

@@ -1,10 +1,11 @@
 import React from "react";
+import Image from 'next/image'
 
 const About = ()=>{
 <div className="mesInfo">
 	<div className="ecrit">
 		<h2>ABESSOLO Christ Rova</h2>
-		<h5>Dévelopeur full stack</h5>
+		<h5>Dévelopeur</h5>
 		<h4>
 			<i>Je suis prêt</i> à participer au developpement de vos projets
 		</h4>
@@ -31,7 +32,7 @@ const About = ()=>{
         <div class="row-equipe">
             <div class="col-equipes">
                 <div class="image-equipe">
-                    <Images rc="../public/images/roro4.png" alt="roro"/>
+                    <Image src="../public/images/roro4.png" alt="roro"></Image>
                 </div>
                 <div class="info-equique">
                     <p>rova </p>
@@ -41,7 +42,7 @@ const About = ()=>{
 
             <div class="col-equipes">
                 <div class="image-equipe">
-                    <Image src="../public/images/roro4.png" alt="nabil"/>
+                    <Image src="../public/images/roro4.png" alt="nabil"></Image>
                 </div>
                 <div class="info-equique">
                     <p>Nabil </p>
@@ -50,11 +51,7 @@ const About = ()=>{
             </div>
         </div>
     </div>
-
-
 </div>
-
-
 }
 
 export default About

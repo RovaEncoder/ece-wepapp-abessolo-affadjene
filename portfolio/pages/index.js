@@ -1,12 +1,15 @@
 import React from "react";
-import MyApp from "./_app";
+
+import About from "./about";
+import Contact from "./contact";
+import Projet from "./projets";
 
 export default function Home() {
 	return (
 		<div>
-			<MyApp />
+			<About />
+			<Contact />
+			<Projet />
 		</div>
 	);
 }
-
-export default Home
