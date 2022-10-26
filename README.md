@@ -54,3 +54,22 @@ git clone git@github.com:RovaEncoder/ece-wepapp-abessolo-affadjene.git
 ```
 npm start
 ```
+### Portofolio :
+
+**first :access to the portofolio**
+
+access to file
+
+'''
+cd portofolio/
+'''
+enter the commande :
+
+'''
+npm run install
+'''
+**second :run the project**
+
+'''
+npm run dev
+'''
