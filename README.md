@@ -60,16 +60,16 @@ npm start
 
 access to file
 
-'''
+```
 cd portofolio/
-'''
+```
 enter the commande :
 
-'''
+```
 npm run install
-'''
+```
 **second :run the project**
 
-'''
+```
 npm run dev
-'''
+```
