@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import roro from "../public/images/roro4.png";
-import moi from "../public/images/moi.jpeg";
+import Nabil from "../public/images/Nabil.jpeg";
 import campus from "../public/images/campus.jpeg";
-import { Link } from "react-router-dom";
+
 
 export default function About() {
 	return (
@@ -16,7 +16,7 @@ export default function About() {
 					<div className="w-full h-auto shadow-xl flex items-center justify-center p-1">
 						<Image
 							className="rounded-xl shadow-xl shadow-black-500"
-							src={moi}
+							src={roro}
 							width={300}
 							height={350}
 							alt="moi"
@@ -46,18 +46,18 @@ export default function About() {
 					</div>
 				</div>
 				<div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 rounded-xl bg-white  p-5">
-					<div className="w-full h-auto shadow-xl flex items-center justify-center p-2">
+					<div className="w-full h-auto shadow-lg flex items-center justify-center p-2">
 						<Image
-							className="rounded-xl shadow-xl shadow-black-500"
-							src={roro}
-							width={315}
-							height={350}
+							className="rounded-xl shadow-lg shadow-black-500 "
+							src={Nabil}
+							width={330}
+							height={345}
 							alt="moi"
 						/>
 					</div>
 					<div className="col-span-2 py-1 bg-white  flex items-center">
 						<div className="">
-							<h3 className="py-1 ">ABESSOLO Christ Rova</h3>
+							<h3 className="py-1 ">Nabil Affadjene</h3>
 							<p className="py-1 w-full md:pr-10 text-justify ">
 								Etudiant à l’ECE-Paris, je suis à vos sevices et je suis très
 								passioné par le developpement web. Cela dit, grace à vous(vos
