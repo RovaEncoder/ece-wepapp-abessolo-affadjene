@@ -21,7 +21,7 @@ export default function Navbar() {
 					<ul className="hidden md:flex text-lg font-semibold ">
 						<Link href="/">
 							<li className="ml-10  uppercase  hover:decoration-blue-800 cursor-pointer">
-								Acueil
+								Accueil
 							</li>
 						</Link>
 						<Link href="/about">
@@ -32,6 +32,11 @@ export default function Navbar() {
 						<Link href="/articles">
 							<li className="ml-10 uppercase hover:border-b cursor-pointer">
 								Articles
+							</li>
+						</Link>
+						<Link href="/contact">
+							<li className="ml-10 uppercase hover:border-b cursor-pointer">
+								Contact
 							</li>
 						</Link>
 					</ul>
@@ -77,31 +82,34 @@ export default function Navbar() {
 								<Link href="/articles">
 									<li className=" text-sm  cursor-pointer py-4">Articles</li>
 								</Link>
+								<Link href="/contact">
+									<li className=" text-sm  cursor-pointer py-4">Contact</li>
+								</Link>
 							</ul>
 						</div>
 					</div>
 
 					<div className=" bg-gray-200 w-full h-60 ">
 						<p className="mt-2 ">Me contacter</p>
-						<div className=" flex items-center justify-between mt-4 p-2 ">
+						<div className=" flex items-center justify-between mt-4 p-2 gap-2 ">
 							<div className="rounded-full shadow-lg shadow-black-100 p-3 cursor-pointer hover:bg-slate-100">
 								<Link href="https://www.linkedin.com/in/christ-rova-abessolo-903aa1244/">
-									<FaLinkedin size={25} />
+									<FaLinkedin size={20} />
 								</Link>
 							</div>
 							<div className="rounded-full shadow-lg shadow-black-100 p-3 cursor-pointer hover:bg-slate-100">
 								<Link href="abessolochrist30@gmail.com">
-									<FaAt size={25} />
+									<FaAt size={20} />
 								</Link>
 							</div>
 							<div className="rounded-full shadow-lg shadow-black-100 p-3 cursor-pointer hover:bg-slate-100">
 								<Link href="https://github.com/RovaEncoder">
-									<FaGithub size={25} />
+									<FaGithub size={20} />
 								</Link>
 							</div>
 							<div className="rounded-full shadow-lg shadow-black-100 p-3 cursor-pointer hover:bg-slate-100">
 								<Link href="+33605549892">
-									<FaMobileAlt size={25} />
+									<FaMobileAlt size={20} />
 								</Link>
 							</div>
 						</div>
