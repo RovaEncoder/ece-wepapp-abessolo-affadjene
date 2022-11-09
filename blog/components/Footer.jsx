@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaAt, FaMobileAlt } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<div className="flex flex-col w-full h-55 justify-center items-center drop-shadow-md bg-sky-900 shadow-2xl">
+		<div className="flex flex-col w-full h-55 justify-center items-center drop-shadow-md bg-slate-900 shadow-2xl">
 			<p className="font-semibold text-white uppercase mt-5 text-lg">
 				Nous contacter
 			</p>

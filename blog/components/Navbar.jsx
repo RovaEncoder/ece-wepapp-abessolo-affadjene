@@ -12,13 +12,13 @@ export default function Navbar() {
 		setNavbar(!navbar);
 	};
 	return (
-		<div className="w-full h-20 shadow-xl z-[100] ">
-			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 bg-green-100 items-center justify-between">
+		<div className="w-full h-20 shadow-2xl z-[100] ">
+			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 !bg-slate-900 !text-white items-center justify-between">
 				<Link href="/">
 					<Image src={logo} width={90} height={50} />
 				</Link>
 				<div className="flex justify-center items-center">
-					<ul className="hidden md:flex text-lg font-semibold ">
+					<ul className="hidden md:flex text-md font-semibold ">
 						<Link href="/">
 							<li className="ml-10  uppercase  hover:decoration-blue-800 cursor-pointer">
 								Accueil

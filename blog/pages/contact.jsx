@@ -13,9 +13,9 @@ export default function Contact() {
 							nous contacter à l'adresse e-mail indiquée. Vous pouvez aussi nous
 							écrire{" "}
 							<a
-								href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions"
+								href="#"
 								target="_blank"
-								rel="noopener noreferrer"
+								rel="oups"
 							>
 								<u>
 									<i>github discussions</i>

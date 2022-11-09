@@ -2,381 +2,169 @@ export default function handler(req, res) {
 	res.status(200).json([
 		{
 			source: {
-				id: null,
-				name: "Moz.com",
+				id: "reuters",
+				name: "Reuters",
 			},
-			author: "Emilie Martin",
+			author: null,
 			title:
-				"Announcing the Keyword Research Certification: Create a Personalized Keyword Strategy",
+				"Republican senators win re-election in initial U.S. midterm results - Reuters",
 			description:
-				"Focusing on your audience and using keyword data to your advantage will make for much more successful campaigns than if you were to focus on the typical desirable keywords. With that, we are so excited to announce the launch of our brand-new Keyword Research …",
-			url: "https://moz.com/blog/moz-keyword-research-certification",
+				"Several Republican senators easily won re-election on Tuesday in U.S. midterm elections that could usher in an era of divided government and scale back President Joe Biden's power in Washington.",
+			url: "https://www.reuters.com/world/us/control-congress-bidens-power-ballot-us-midterms-2022-11-08/",
 			urlToImage:
-				"https://moz.com/images/blog/banners/KWR-Cert-BlogHeader-1180x400.png?w=1200&h=630&q=82&auto=format&fit=crop&dm=1666957435&s=7851da1c97758855b87e54a8de10d135",
-			publishedAt: "2022-11-01T16:00:00Z",
+				"https://www.reuters.com/resizer/VDZP5O4E9myFjcyFHskA_zNUZDg=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/LQC5XZPP2JLLTMC4GPSJ6QBYHM.jpg",
+			publishedAt: "2022-11-09T00:30:00Z",
 			content:
-				"The heart of your SEO. The foundation for building ideas and thoughts in your industry. The vital link between you and your audience.\r\nWhat are we talking about? Keywords, of course!\r\nKeyword researc… [+7408 chars]",
+				"ALPHARETTA, Ga./PHOENIX, Ariz., Nov 8 (Reuters) - Several Republican senators easily won re-election on Tuesday in U.S. midterm elections that could usher in an era of divided government and scale ba… [+6216 chars]",
 		},
 		{
 			source: {
-				id: null,
-				name: "Moz.com",
+				id: "usa-today",
+				name: "USA Today",
 			},
-			author: "Tom Capper",
-			title: "Metrics for Better Keyword Research — Whiteboard Friday",
-			description:
-				"In today’s Whiteboard Friday, Tom explains some of the common mistakes SEOs make when doing keyword research that are easy to fix, many of which come from metrics like search volume, click-through rate, and difficulty.",
-			url: "https://moz.com/blog/keyword-research-metrics-whiteboard-friday",
-			urlToImage:
-				"https://moz.com/images/cms/WBF-KWResearchMetrics-Thumbnail-1.png?w=1200&h=630&q=82&auto=format&fit=crop&dm=1666903259&s=2e1d2c754aa85c3299826b03d44fd988",
-			publishedAt: "2022-10-28T07:00:00Z",
-			content:
-				"The author's views are entirely his or her own (excluding the unlikely event of hypnosis) and may not always reflect the views of Moz.Many SEOs think of keyword research as a very basic part of SEO, … [+7324 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "VentureBeat",
-			},
-			author: "Sean Michael Kerner",
+			author: "John Bacon and Jorge L. Ortiz, USA TODAY",
 			title:
-				"Vectara’s AI-based neural search-as-a-service challenges keyword-based searches",
+				"Russian fighters mock 'great generals' after suffering heavy losses; Zelenskyy cracks open a door to peace talks: Ukraine live updates - USA TODAY",
 			description:
-				"Vectara, formerly ZIR AI, has emerged from stealth with $20M in seed funding, offering AI-based neural search-as-a-service technology.",
-			url: "https://venturebeat.com/ai/vectaras-ai-based-neural-search-as-a-service-challenges-keyword-based-searches/",
+				'Russia\'s Defense Ministry downplayed complaints from troops of being sent into an "incomprehensible offensive" that resulted in many deaths. Updates.',
+			url: "https://www.usatoday.com/story/news/world/2022/11/08/ukraine-russia-war-updates/8300182001/",
 			urlToImage:
-				"https://venturebeat.com/wp-content/uploads/2022/10/GettyImages-search_search-engine_connected_network_1400992296-e1665532643283.jpg?w=1200&strip=all",
-			publishedAt: "2022-10-12T11:00:00Z",
+				"https://www.gannett-cdn.com/presto/2022/11/08/USAT/2b585bec-281f-4fc4-8ba0-7fd42107e88d-AP_APTOPIX_Russia_Ukraine_War_4.jpg?auto=webp&crop=7560,4253,x0,y384&format=pjpg&width=1200",
+			publishedAt: "2022-11-09T00:22:30Z",
 			content:
-				"To further strengthen our commitment to providing industry-leading coverage of data technology, VentureBeat is excited to welcome Andrew Brust and Tony Baer as regular contributors. Watch for their a… [+1380 chars]",
+				"Russia's Defense Ministry is downplaying claims made in an open letter apparently from members of the 155th marine brigade of Russia's Pacific Fleet saying they had been sent into an \"incomprehensibl… [+6666 chars]",
 		},
+
 		{
 			source: {
-				id: null,
-				name: "Entrepreneur",
+				id: "cnn",
+				name: "CNN",
 			},
-			author: "Pulkit Agrawal",
-			title: "6 SEO Myths Every Business Owner Should Ignore",
-			description:
-				"Believing these six SEO myths will likely cause more harm than good to any business.",
-			url: "https://www.entrepreneur.com/growing-a-business/6-seo-myths-every-business-owner-should-ignore/436540",
-			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1666638413-GettyImages-855281144.jpg",
-			publishedAt: "2022-10-27T18:30:00Z",
-			content:
-				"Let us be honest, every business owner tries to keep up with the ever-changing Google algorithm. Why? Because nobody wants to be on the second page of Google. In SEO, quick victories with little effo… [+6254 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Search Engine Journal",
-			},
-			author: "Moz",
-			title: "3 Ways To Unlock Keyword Gold",
-			description:
-				"Learn how to add efficiency & effectiveness to your SEO keyword research process & discover golden opportunities to rank higher on SERPs.\nThe post 3 Ways To Unlock Keyword Gold appeared first on Search Engine Journal.",
-			url: "https://www.searchenginejournal.com/unlock-keyword-gold-moz-spcs/468065/",
-			urlToImage:
-				"https://cdn.searchenginejournal.com/wp-content/uploads/2022/10/featured-image-634db1364bdf8-sej.jpg",
-			publishedAt: "2022-10-27T05:00:04Z",
-			content:
-				"Keyword research is often thought of as the keystone of SEO and provides the foundation for many SEO strategies. After all, how can you optimize your website for search engines if you don’t know what… [+3571 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "ReadWrite",
-			},
-			author: "Angel Martins",
-			title: "How To Optimize Your WordPress Website for SEO in 2022",
-			description:
-				"WordPress has become a preferred platform for businesses of all sizes and industries. This is because of its user-friendly nature and relatively simple maintenance features. Along with the plentiful options of plugins and themes available for users to customi…",
-			url: "https://readwrite.com/how-to-optimize-your-wordpress-website-for-seo-in-2022/",
-			urlToImage:
-				"https://images.readwrite.com/wp-content/uploads/2022/09/Optimize-WordPress-Website.jpg",
-			publishedAt: "2022-10-20T18:00:59Z",
-			content:
-				"WordPress has become a preferred platform for businesses of all sizes and industries. This is because of its user-friendly nature and relatively simple maintenance features. Along with the plentiful … [+8841 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Search Engine Journal",
-			},
-			author: "John Lincoln",
+			author: "Aya Elamroussi, Dakin Andone",
 			title:
-				"How To Use Google Ads Keyword Forecast Tool For Predictive Keyword Research via @sejournal, @johnelincoln",
+				"A single winning ticket for the $2.04 billion Powerball jackpot was sold in California - CNN",
 			description:
-				"Learn how to use the Keyword Planner tool so your PPC and SEO efforts can work together.\nThe post How To Use Google Ads Keyword Forecast Tool For Predictive Keyword Research appeared first on Search Engine Journal.",
-			url: "https://www.searchenginejournal.com/google-ads-keyword-forecast-tool/453068/",
+				"Officials have finally announced the winning numbers for the record $2.04 billion Powerball lottery jackpot after Monday night's drawing was delayed when one of the 48 participating lotteries needed more time to complete the necessary protocols. The winning n…",
+			url: "https://www.cnn.com/2022/11/08/us/powerball-lottery-record-delayed-drawing-tuesday-trnd/index.html",
 			urlToImage:
-				"https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/google-ads-6304c8b263c4f-sej.png",
-			publishedAt: "2022-10-20T11:45:59Z",
+				"https://media.cnn.com/api/v1/images/stellar/prod/221103101341-powerball.jpg?c=16x9&q=w_800,c_fill",
+			publishedAt: "2022-11-08T23:54:00Z",
 			content:
-				"The Google Ads Keyword Planner is a useful tool; there’s no doubt about that.\r\nWhether you’re starting your first Google Ads campaign or your hundredth campaign, having a plan or forecast is critical… [+9814 chars]",
+				"A lone winning ticket for the record $2.04 billion Powerball lottery jackpot was sold in Altadena, California, lottery officials said Tuesday, making the lucky ticket holder the winner of the largest… [+5003 chars]",
 		},
 		{
 			source: {
-				id: null,
-				name: "Entrepreneur",
+				id: "cnn",
+				name: "CNN",
 			},
-			author: "Timothy Carter",
+			author: "Jackie Wattles",
 			title:
-				"How to Optimize for Competitor Brand Keywords (and Why You Should)",
+				"NASA's Artemis I mission delayed again as storm barrels toward launch site - CNN",
 			description:
-				"Why is this strategy powerful and how can you use it effectively?",
-			url: "https://www.entrepreneur.com/growing-a-business/how-to-optimize-for-competitor-brand-keywords/429426",
+				"The NASA Space Launch System rocket is facing a battering from Tropical Storm Nicole, which is now expected to strengthen into a hurricane before it slams into Florida's East Coast.",
+			url: "https://www.cnn.com/2022/11/08/world/nasa-artemis-i-sls-hurricane-tropical-storm-nicole-scn/index.html",
 			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1666193309-GettyImages-1159619657.jpg",
-			publishedAt: "2022-10-25T12:00:00Z",
+				"https://media.cnn.com/api/v1/images/stellar/prod/221108135329-artemis-i-1106.jpg?c=16x9&q=w_800,c_fill",
+			publishedAt: "2022-11-08T23:28:00Z",
 			content:
-				"Most people see search engine optimization (SEO) as a kind of solitaire. You work entirely in isolation, improving your website and offsite references to maximize your results. To some extent, this i… [+5695 chars]",
+				"Sign up for CNNs Wonder Theory science newsletter. Explore the universe with news on fascinating discoveries, scientific advancements and more.\r\nThe Artemis I mission, which is expected to send an un… [+4847 chars]",
 		},
 		{
 			source: {
 				id: "reuters",
 				name: "Reuters",
 			},
-			author: "Reuters Fact Check",
-			title:
-				"Fact Check-Fabricated Lauren Boebert quote about slavery and unemployment - Reuters",
+			author: null,
+			title: "Wall Street ends higher as investors eye U.S. midterms - Reuters",
 			description:
-				"Republican Congresswoman Lauren Boebert did not say “the lowest black unemployment rate was during slavery,” as claimed on social media. The Twitter account that appears to have originally posted the alleged statement has previously shared satirical tweets.",
-			url: "https://www.reuters.com/article/factcheck-boebert-unemployment-idUSL1N31Q261",
+				"Wall Street ended higher on Tuesday during voting in midterm elections that will determine control of the U.S. Congress, with investors betting on a political stalemate that could prevent major policy changes.",
+			url: "https://www.reuters.com/markets/us/futures-edge-higher-with-focus-midterm-elections-2022-11-08/",
 			urlToImage:
-				"https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
-			publishedAt: "2022-10-25T18:14:00Z",
+				"https://www.reuters.com/resizer/A6onzXutOdxz1VuYErQrEb5U6O4=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/KB3N2MCUSRIWNL6J3ZDLD4HSPQ.jpg",
+			publishedAt: "2022-11-08T23:16:00Z",
 			content:
-				"Republican Congresswoman Lauren Boebert did not say the lowest black unemployment rate was during slavery, as claimed on social media. The Twitter account that appears to have originally posted the a… [+1612 chars]",
+				"Nov 8 (Reuters) - Wall Street ended higher on Tuesday during voting in midterm elections that will determine control of the U.S. Congress, with investors betting on a political stalemate that could p… [+3675 chars]",
 		},
 		{
 			source: {
 				id: null,
-				name: "MacRumors",
+				name: "CNBC",
 			},
-			author: "Joe Rossignol",
-			title: "Apple Begins Showing More Ads in App Store",
-			description:
-				"As expected, Apple today announced that new ad placements are now available in the App Store, allowing developers to advertise their apps in more spots.\n\n\n\n\n\nStarting today, developers can now advertise their apps in the App Store's main Today tab and in a \"Y…",
-			url: "https://www.macrumors.com/2022/10/25/apple-now-showing-more-ads-in-app-store/",
-			urlToImage:
-				"https://images.macrumors.com/t/JaGV8IQcbICTDHXdcL3gdnx4QYU=/2048x/article-new/2022/10/App-Store-Ads.jpeg",
-			publishedAt: "2022-10-25T18:26:38Z",
-			content:
-				"As expected, Apple today announced that new ad placements are now available in the App Store, allowing developers to advertise their apps in more spots.\r\nStarting today, developers can now advertise … [+1460 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Entrepreneur",
-			},
-			author: "David Wright",
+			author: "Emma Kinery, Chelsey Cox, Kevin Breuninger",
 			title:
-				"Is Your Advertising Spend Going to Waste? If You Don't Fully Understand This Metric, It Probably Is.",
+				"Live updates — Midterm elections: Inflation and abortion are voters' top concerns, NBC exit poll finds - CNBC",
 			description:
-				"Return on ad spend (ROAS) is commonly misunderstood and therefore misused. Here's why and what you should focus on instead.",
-			url: "https://www.entrepreneur.com/growing-a-business/is-your-advertising-strategy-producing-a-true-return/436768",
+				"The midterm elections will determine whether Democrats keep their congressional majorities. The outcome could have an impact on President Joe Biden's agenda.",
+			url: "https://www.cnbc.com/2022/11/08/midterm-elections-2022-live-updates.html",
 			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1666884673-GettyImages-1334810623.jpg",
-			publishedAt: "2022-11-01T19:00:00Z",
+				"https://image.cnbcfm.com/api/v1/image/107148261-1667940021459-GettyImages-1440056607r.jpg?v=1667940146&w=1920&h=1080",
+			publishedAt: "2022-11-08T22:31:00Z",
 			content:
-				"Nearly every advertising report ever produced includes a line for return on ad spend (ROAS). Often, it's used as the top-line indicator of ad effectiveness. The unfortunate truth is that ROAS is a co… [+5970 chars]",
+				"President Joe Biden, beset by a relatively low approval rating, has mostly avoided campaigning in states holding critical midterm election races. \r\nOn Monday, the day before the election, Biden parti… [+1714 chars]",
 		},
 		{
 			source: {
 				id: null,
-				name: "MakeUseOf",
+				name: "13WMAZ.com",
 			},
-			author: "Russ Ware",
-			title:
-				"How to Instantly Insert Text Snippets Anywhere in Windows With Beeftext",
+			author: "Justin Baxley",
+			title: "Live Map Results | Georgia governor's race - 13WMAZ.com",
 			description:
-				"Quickly add text anywhere you need it with a simple keyword using Beeftext for Windows",
-			url: "https://www.makeuseof.com/windows-beeftext-guide/",
+				"See a breakdown of Georgia's votes and track the results as they come in with our interactive map.",
+			url: "https://www.13wmaz.com/article/news/local/georgia-governor-election-2022-results/93-40a03267-c6d6-4c0f-9b45-58cfb85f135e",
 			urlToImage:
-				"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/09/cover_photo.jpg",
-			publishedAt: "2022-10-08T18:15:14Z",
+				"https://media.13wmaz.com/assets/WXIA/images/cdaa5554-75c4-4d66-92c1-daad57c25cb2/cdaa5554-75c4-4d66-92c1-daad57c25cb2_1140x641.jpg",
+			publishedAt: "2022-11-08T22:17:00Z",
 			content:
-				"Tired of having to repeatedly type out the same text again and again? You need a text snippet! Text snippets, common in code-writing tools, make inserting repeated content quicker and easier.\r\nThe wo… [+3750 chars]",
+				"MACON, Ga. The race for Georgia governor is one of the many key races in the midterm elections on Nov. 8. \r\nIncumbent Brian Kemp is facing a familiar challenger in Stacey Abrams and Libertarian candi… [+1648 chars]",
 		},
 		{
 			source: {
 				id: null,
-				name: "Wagslane.dev",
+				name: "AL.com",
+			},
+			author: "Matt Wake | mwake@al.com",
+			title:
+				"Jeff Cook, cofounder of superstar country band Alabama, has died - AL.com",
+			description:
+				"Whether playing guitar, fiddle or singing backing vocals, Cook was a vital component of group",
+			url: "https://www.al.com/life/2022/11/jeff-cook-cofounder-of-superstar-country-band-alabama-has-died.html",
+			urlToImage:
+				"https://www.al.com/resizer/skvmzR75bAH5xKGCpj0KqCWGOj4=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/56KT6MWLBVDRRCJZ6O5SLITYVI.jpg",
+			publishedAt: "2022-11-08T22:11:00Z",
+			content:
+				"In the early 70s, guitarist Jeff Cook started a band called Wildcountry with his cousins, and five years later the band changed their name to Alabama. Under that second appellation, the Fort Payne fo… [+5092 chars]",
+		},
+		{
+			source: {
+				id: null,
+				name: "YouTube",
 			},
 			author: null,
-			title: "Thoughts on the “Guard” Proposal for Go's Error Handling",
+			title: "Local doc on new study on Paxlovid - WCVB Channel 5 Boston",
 			description:
-				"I found this proposal for improvements to error handling in Go interesting, but still not something I’d be happy to see implemented.\nAllow me to clear up my thoughts on Go’s errors. Overall, I prefer how Go forces me to think about errors at every turn. When …",
-			url: "https://wagslane.dev/posts/guard-keyword-error-handling-golang/",
-			urlToImage: "https://wagslane.dev/img/800/gopher.png.webp",
-			publishedAt: "2022-11-05T23:48:53Z",
-			content:
-				"I found this proposal for improvements to error handling in Go interesting, but still not something I’d be happy to see implemented.\r\nAllow me to clear up my thoughts on Go’s errors. Overall, I prefe… [+3754 chars]",
+				"Dr. Todd Ellerin of South Shore Health discusses new study about the results of using Paxlovid in high-risk patients.Subscribe to WCVB on YouTube now for mor...",
+			url: "https://www.youtube.com/watch?v=2GDB0ks55nA",
+			urlToImage: "https://i.ytimg.com/vi/2GDB0ks55nA/maxresdefault.jpg",
+			publishedAt: "2022-11-08T22:08:21Z",
+			content: null,
 		},
 		{
 			source: {
 				id: null,
-				name: "Hubspot.com",
+				name: "Deadline",
 			},
-			author: "tcorrado@hubspot.com (Taylor Corrado)",
+			author: "Anthony D'Alessandro",
 			title:
-				"Google Ad Grants: Everything You Need to Know (+ 10 Helpful Tips)",
+				"‘Black Panther: Wakanda Forever’ Advance Ticket Sales At $45M, 20% Behind ‘Doctor Strange 2’ - Deadline",
 			description:
-				"If you're a nonprofit, you should be a member of Google for Nonprofits, a program that includes a free membership and access to various products. One product that should be on your radar is Google Ad Grants.",
-			url: "https://blog.hubspot.com/marketing/nonprofits-google-grants-slideshare-ht#article",
-			urlToImage: "https://blog.hubspot.com/hubfs/Nonprofit-2.jpg#keepProtocol",
-			publishedAt: "2022-11-08T12:00:00Z",
-			content:
-				"If you're a nonprofit, you should be a member of Google for Nonprofits, a program that includes a free membership and access to various products. One product that should be on your radar is Google Ad… [+7844 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Entrepreneur",
-			},
-			author: "Gajura Constantin",
-			title: "What Is SEO and How Can it Improve Online Success?",
-			description:
-				"Follow this guide for SEO basics to propel your online business.",
-			url: "https://www.entrepreneur.com/growing-a-business/a-basic-guide-to-seo-and-its-impact-on-online-businesses/435586",
+				"Advance ticket sales through Sunday for Disney-Marvel Studios’ Black Panther: Wakanda Forever stand at $45M, about 20% behind Doctor Strange in the Multiverse of Madness at the same point in time and 40% ahead of Thor: Love & Thunder. Doctor Strange 2 before …",
+			url: "https://deadline.com/2022/11/black-panther-wakanda-forever-box-office-advance-ticket-sales-1235167041/",
 			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1665081761-GettyImages-1339030364copy.jpg",
-			publishedAt: "2022-10-10T14:00:00Z",
+				"https://deadline.com/wp-content/uploads/2022/11/wakanda-forever-.jpg?w=1024",
+			publishedAt: "2022-11-08T21:58:00Z",
 			content:
-				'Many business owners and marketers are fascinated by the term "SEO," which stands for Search Engine Optimization. Everyone comes up with their theories to make SEO work in the best possible way, but … [+5925 chars]',
-		},
-		{
-			source: {
-				id: null,
-				name: "Android Central",
-			},
-			author: "tips@androidcentral.com (Nickolas Diaz)",
-			title:
-				"Google's new AI Test Kitchen demos will let you build cities and create monsters",
-			description:
-				"Google will soon bring new text-to-image technology to its AI Test Kitchen for user feedback and experimentation. The company also showed off a video created by its AI software comprised entirely out of words describing how the video should progress and what …",
-			url: "https://www.androidcentral.com/apps-software/google-ai-test-kitchen-demos-city-dreamer-wobble",
-			urlToImage:
-				"https://cdn.mos.cms.futurecdn.net/6r7dmuKYybGEkrDJkxFSQN-1200-80.jpg",
-			publishedAt: "2022-11-02T22:24:47Z",
-			content:
-				"<ul><li>Google is bringing new AI advancements to its AI Test Kitchen for user feedback and testing.</li><li>Researchers have worked on a way for users to create a long form video based on text along… [+1967 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Android Central",
-			},
-			author: "tips@androidcentral.com (Nickolas Diaz)",
-			title:
-				"Android 13 (Go edition) brings Material You, Discover feed, and streamlined updates",
-			description:
-				"Google has introduced its Android 13 (Go edition) software update for entry-level Android phones. This new update will launch in 2023 and bring Material You and the ability to receive critical updates faster as it saves on internal space.",
-			url: "https://www.androidcentral.com/apps-software/android-13-go-edition-announcement",
-			urlToImage:
-				"https://cdn.mos.cms.futurecdn.net/8VnQSdaXBozTr6nVNLjJT6-1200-80.jpg",
-			publishedAt: "2022-10-19T18:59:39Z",
-			content:
-				"<ul><li>Google has introduced Android 13 (Go edition), releasing on new phones in 2023.</li><li>The company will provide direct updates for entry-level devices by using Google Play System Updates for… [+2091 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Hubspot.com",
-			},
-			author: "Caroline Forsey",
-			title:
-				"Which SEO Metrics Matter Most to Marketing Leaders, According to Semrush's VP of Brand Marketing",
-			description:
-				"Take a look at the SEO metrics Semrush's VP of Brand Marketing advises leaders pay close attention to in 2023.",
-			url: "https://blog.hubspot.com/marketing/seo-metrics-matter-most-leaders#article",
-			urlToImage:
-				"https://blog.hubspot.com/hubfs/seo%20metrics%20that%20matter%20most%20in%202023.jpg#keepProtocol",
-			publishedAt: "2022-10-31T11:00:00Z",
-			content:
-				"Having a strong SEO strategy is critical for reaching new audiences and generating leads for your business.\r\nIn fact, 43% of marketing directors, VPs, and C-suite executives reported SEO as one of th… [+8002 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Hubspot.com",
-			},
-			author: "man@hubspot.com (Mimi An)",
-			title: "Topic Clusters: The Next Evolution of SEO",
-			description:
-				"Written with contributions from Leslie Ye, Matthew Barby, Anum Hussain, and Cambria Davies \nTL;DR: Influential search engines like Google have changed their algorithm to favor topic-based content. As a result, websites are exploring a new way of linking relat…",
-			url: "https://blog.hubspot.com/marketing/topic-clusters-seo#article",
-			urlToImage:
-				"https://blog.hubspot.com/hubfs/topic-clusters.jpg#keepProtocol",
-			publishedAt: "2022-10-20T11:00:00Z",
-			content:
-				"Written with contributions from Leslie Ye, Matthew Barby, Anum Hussain, and Cambria Davies\r\nTL;DR: Influential search engines like Google have changed their algorithm to favor topic-based content. As… [+10189 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Entrepreneur",
-			},
-			author: "Dennis Consorte",
-			title:
-				"Level Up Your Publicity Campaign in Just a Few Steps With This Alternative Method",
-			description:
-				"How can you get critical media placements amidst all the noise? One way is by crafting and promoting data stories. Here's how to do it.",
-			url: "https://www.entrepreneur.com/growing-a-business/how-data-storytelling-can-level-up-your-publicity-campaign/436086",
-			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1665588813-GettyImages-1210328792.jpg",
-			publishedAt: "2022-10-17T19:00:00Z",
-			content:
-				"As an introvert who comes from an SEO and technical background, I approach publicity more methodically than traditional publicists. Many of them rely on relationships with journalists and bloggers to… [+5909 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Entrepreneur",
-			},
-			author: "Krista Mashore",
-			title: "How to Use Your Past As a Launchpad for Success",
-			description:
-				"Our pasts may haunt us, but we can use the lessons we've learned in the past to better our future.",
-			url: "https://www.entrepreneur.com/growing-a-business/4-ways-to-use-the-past-to-capture-success/436274",
-			urlToImage:
-				"https://assets.entrepreneur.com/content/3x2/2000/1666042691-GettyImages-1396447929.jpg",
-			publishedAt: "2022-10-19T16:30:00Z",
-			content:
-				"I always tell my students that \"your history is not your destiny.\" While that's true, I've come to realize that your history can be valuable. You can gain so much from the past if you use it properly… [+5214 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "Neilpatel.com",
-			},
-			author: "Neil Patel",
-			title: "Examples of E-commerce SEO Done Right (and Mistakes To Avoid)",
-			description:
-				"We all know the foundation of e-commerce SEO is keyword research. Over half of shoppers surveyed in a global retail study say they use Google to research purchases they plan to make online. This is why SEO is your golden ticket to increasing organic visibilit…",
-			url: "https://neilpatel.com/blog/examples-of-ecommerce-seo/",
-			urlToImage:
-				"https://neilpatel.com/wp-content/uploads/2022/09/ecommerce-seo-6-700x420.jpg",
-			publishedAt: "2022-10-17T19:00:00Z",
-			content:
-				"We all know the foundation of e-commerce SEO is keyword research.\r\nOver half of shoppers surveyed in a global retail study say they use Google to research purchases they plan to make online.\r\nThis is… [+11542 chars]",
-		},
-		{
-			source: {
-				id: null,
-				name: "ReadWrite",
-			},
-			author: "Subhankar Bhattacharjee",
-			title: "How To Blog for Business and be a Successful Entrepreneur",
-			description:
-				"Blogging is becoming a trendy venue for businesses to reach customers, freelancers, and solopreneurs. However, it’s crucial to realize that there are pitfalls in trying to embark on a blog that you may not be prepared for – such as how to write exciting conte…",
-			url: "https://readwrite.com/how-to-blog-for-business-and-be-a-successful-entrepreneur/",
-			urlToImage:
-				"https://images.readwrite.com/wp-content/uploads/2022/09/How-To-Blog.jpg",
-			publishedAt: "2022-10-19T18:00:48Z",
-			content:
-				"Blogging is becoming a trendy venue for businesses to reach customers, freelancers, and solopreneurs. However, it’s crucial to realize that there are pitfalls in trying to embark on a blog that you m… [+11236 chars]",
+				"Advance ticket sales through Sunday for Disney-Marvel Studios’ Black Panther: Wakanda Foreverstand at $45M, about 20% behind Doctor Strange in the Multiverse of Madness at the same point in time and … [+1184 chars]",
 		},
 	]);
 }

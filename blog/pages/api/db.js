@@ -34,20 +34,7 @@ export default function handler(req, res) {
 			content:
 				"Russia's Defense Ministry is downplaying claims made in an open letter apparently from members of the 155th marine brigade of Russia's Pacific Fleet saying they had been sent into an \"incomprehensibl… [+6666 chars]",
 		},
-		{
-			source: {
-				id: "google-news",
-				name: "Google News",
-			},
-			author: null,
-			title:
-				"‘Fireball’ lights up early morning skies in Virginia, photos show. What was it? - Raleigh News & Observer",
-			description: null,
-			url: "https://news.google.com/__i/rss/rd/articles/CBMiTWh0dHBzOi8vd3d3Lm5ld3NvYnNlcnZlci5jb20vbmV3cy9uYXRpb24td29ybGQvbmF0aW9uYWwvYXJ0aWNsZTI2ODQwMjQ1Mi5odG1s0gEA?oc=5",
-			urlToImage: null,
-			publishedAt: "2022-11-08T23:58:23Z",
-			content: null,
-		},
+
 		{
 			source: {
 				id: "cnn",
@@ -308,20 +295,6 @@ export default function handler(req, res) {
 			urlToImage:
 				"https://komonews.com/resources/media/4103ecb7-35c2-4a67-9869-b9753dbb3768-large16x9_IngrahamHS.jpg?1667938508348",
 			publishedAt: "2022-11-08T20:11:32Z",
-			content: null,
-		},
-		{
-			source: {
-				id: "google-news",
-				name: "Google News",
-			},
-			author: null,
-			title:
-				"Microsoft November 2022 Patch Tuesday fixes 6 exploited zero-days, 68 flaws - BleepingComputer",
-			description: null,
-			url: "https://news.google.com/__i/rss/rd/articles/CBMie2h0dHBzOi8vd3d3LmJsZWVwaW5nY29tcHV0ZXIuY29tL25ld3MvbWljcm9zb2Z0L21pY3Jvc29mdC1ub3ZlbWJlci0yMDIyLXBhdGNoLXR1ZXNkYXktZml4ZXMtNi1leHBsb2l0ZWQtemVyby1kYXlzLTY4LWZsYXdzL9IBf2h0dHBzOi8vd3d3LmJsZWVwaW5nY29tcHV0ZXIuY29tL25ld3MvbWljcm9zb2Z0L21pY3Jvc29mdC1ub3ZlbWJlci0yMDIyLXBhdGNoLXR1ZXNkYXktZml4ZXMtNi1leHBsb2l0ZWQtemVyby1kYXlzLTY4LWZsYXdzL2FtcC8?oc=5",
-			urlToImage: null,
-			publishedAt: "2022-11-08T18:39:42Z",
 			content: null,
 		},
 	]);
