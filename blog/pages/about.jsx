@@ -4,7 +4,6 @@ import roro from "../public/images/roro4.png";
 import Nabil from "../public/images/Nabil.jpeg";
 import campus from "../public/images/campus.jpeg";
 
-
 export default function About() {
 	return (
 		<>
@@ -92,7 +91,7 @@ export default function About() {
 								alt="campus"
 							/>
 						</div>
-						<div className="w-[700px] bg-white p-2">
+						{/* <div className="w-[700px] bg-white p-2">
 							<p className="text-justify w-[375px]:text-sm">
 								<a
 									className="text-blue-500 font-bold text-2xl"
@@ -108,7 +107,7 @@ export default function About() {
 								d’expériences entre étudiants, professeurs, chercheurs et
 								professionnels issus du monde…
 							</p>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
