@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Article({ articles }) {
 	return (
 		<div className="flex px-20 py-10 gap-16 md:flex-row md:flex-wrap !bg-slate-900 ms:flex-col sm:flex-col min-w-[10%]:flex-col ">
@@ -30,7 +28,7 @@ export default function Article({ articles }) {
 						</div>
 					</div>
 					<div className="w-full h-auto flex items-center justify-center mb-2">
-						<button class="bg-sky-500 hover:bg-sky-500/50 text-white  p-0.5 rounded-sm flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-1 ">
+						<button class="bg-sky-500 hover:bg-sky-500/50 text-white  p-0.5 rounded-sm flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-2 ">
 							<a href={article.url}>
 								<small>Read more ...</small>
 							</a>

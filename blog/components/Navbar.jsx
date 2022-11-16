@@ -20,22 +20,22 @@ export default function Navbar() {
 				<div className="flex justify-center items-center">
 					<ul className="hidden md:flex text-md font-semibold ">
 						<Link href="/">
-							<li className="ml-10  uppercase  hover:decoration-blue-800 cursor-pointer">
+							<li className="ml-10  uppercase  hover:border-b-2 cursor-pointer">
 								Accueil
 							</li>
 						</Link>
 						<Link href="/about">
-							<li className="ml-10 uppercase hover:border-b cursor-pointer">
+							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
 								A propos
 							</li>
 						</Link>
 						<Link href="/articles">
-							<li className="ml-10 uppercase hover:border-b cursor-pointer">
+							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
 								Articles
 							</li>
 						</Link>
 						<Link href="/contact">
-							<li className="ml-10 uppercase hover:border-b cursor-pointer">
+							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
 								Contact
 							</li>
 						</Link>
