@@ -12,7 +12,7 @@ export default function Navbar() {
 		setNavbar(!navbar);
 	};
 	return (
-		<div className="w-full h-20 shadow-2xl z-[100] ">
+		<div className="w-full h-20 shadow-2xl z-[100] fixed">
 			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 !bg-slate-900 !text-white items-center justify-between">
 				<Link href="/">
 					<Image src={logo} width={90} height={50} />
@@ -37,6 +37,11 @@ export default function Navbar() {
 						<Link href="/contact">
 							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
 								Contact
+							</li>
+						</Link>
+						<Link href="/login">
+							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
+								Se connecter
 							</li>
 						</Link>
 					</ul>

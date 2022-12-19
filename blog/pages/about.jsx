@@ -7,7 +7,7 @@ import campus from "../public/images/campus.jpeg";
 export default function About() {
 	return (
 		<>
-			<div className="w-full px-2 flex items-center py-3 flex-col">
+			<div className="w-full px-2 flex items-center py-3 flex-col pt-20">
 				<p className="uppercase font-bold text-2xl mt-5 text-sky-700">
 					Here we are !
 				</p>

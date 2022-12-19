@@ -1,4 +1,4 @@
-# Projet WebApp
+# Projet WebApp : Blog appication
 
 ---
 
@@ -55,22 +55,27 @@ git clone git@github.com:RovaEncoder/ece-wepapp-abessolo-affadjene.git
 npm start
 
 ```
-### Portofolio :
 
-**first :access to the portofolio**
+### blog :
+
+**first :access to the blog**
 
 access to file
 
 ```
-cd portofolio/
+cd blog/
 ```
+
 enter the commande :
 
 ```
 npm run install
 ```
+
 **second :run the project**
 
 ```
 npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -11,7 +11,7 @@ export default function Notfound() {
 	}, []);
 
 	return (
-		<div className="w-full md:h-screen flex items-center justify-center flex-col bg-bla">
+		<div className="w-full md:h-screen flex items-center justify-center flex-col pt-20">
 			<h1>Oups</h1>
 			<p className="mt-2">
 				Cette page n'existe pas: redirection automatique dans 4s😎 !

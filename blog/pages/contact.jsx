@@ -1,7 +1,7 @@
 export default function Contact() {
 	return (
 		<>
-			<section className="container mx-1 px-5 pb-10 md:pt-20 pt-[80px]">
+			<div className="container mx-1 px-5 pb-10 md:pt-20  pt-20">
 				<p title className="p-5xlx ml-2 font-semibold ">
 					Contactez nous
 				</p>
@@ -27,9 +27,9 @@ export default function Contact() {
 						</p>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section
+			<div
 				className={
 					"dark:bg-slate-800 text-white/80 mt-10 container py-10 md:px-20 px-5 mb-20"
 				}
@@ -38,13 +38,13 @@ export default function Contact() {
 					Travaillez avec nous . . .
 				</p>
 				<p className="!p-lg leading-relaxed mt-5 px-1">
-					Nous sommes un groupe de 2 apprentis développeurs, nous utilisons
-					quelques framework Javascript pour ce projet. Si vous appréciez notre
-					travail et voulez travaillez ou nous contacter pour la mise en place
-					d'un Web Développement, n'hésitez pas à nous contacter.
+					Nous sommes un groupe de 2 apprentis développeurs motivés, nous
+					utilisons quelques framework Javascript pour ce projet. Si vous
+					appréciez notre travail et voulez travailler ou nous contacter pour la
+					mise en place d'un Web Développement, n'hésitez pas à nous contacter.
 				</p>
-			</section>
-			<section className="w-full  flex justify-center items-center">
+			</div>
+			<div className="w-full  flex justify-center items-center">
 				<form action="" className="flex p-8 flex-col max-w-[500px] w-full">
 					<div>
 						<p className="inline border-b-4 border-slate-800 text-3xl font-semibold text-slate-800">
@@ -69,7 +69,7 @@ export default function Contact() {
 						Envoyer
 					</button>
 				</form>
-			</section>
+			</div>
 		</>
 	);
 }

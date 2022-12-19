@@ -31,7 +31,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<p className="font-semibold text-white/80 mb-5">
-				<small>Made by ❤️</small>
+				<small>Made with ❤️</small>
 			</p>
 		</div>
 	);
