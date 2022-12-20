@@ -1,6 +1,8 @@
+import Layout from "../layout/layout";
+
 export default function Contact() {
 	return (
-		<>
+		<Layout>
 			<div className="container mx-1 px-5 pb-10 md:pt-20  pt-20">
 				<p title className="p-5xlx ml-2 font-semibold ">
 					Contactez nous
@@ -70,6 +72,6 @@ export default function Contact() {
 					</button>
 				</form>
 			</div>
-		</>
+		</Layout>
 	);
 }

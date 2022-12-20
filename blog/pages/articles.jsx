@@ -19,17 +19,6 @@ export default function Article({ articles }) {
 					/>
 				</div>
 			</div>
-			{/* <div className="w-full flex items-center justify-center pt-10 bg-slate-900 ">
-				<div className="w-1/4  flex items-center bg-white rounded-3xl px-5">
-					<button className="bg-white mx-2">
-						<FaSistrix className="text-wite  bg-black" size={28} />
-					</button>
-					<input
-						className="p-1 w-full text-white my-4 border bg-black rounded-sm"
-						placeholder="E-mail"
-					></input>
-				</div>
-			</div> */}
 			<div className="flex px-20 py-10 gap-16 md:flex-row md:flex-wrap !bg-slate-900 ms:flex-col sm:flex-col min-w-[10%]:flex-col ">
 				{articles.map((article) => (
 					<div className="basis-1/4 shadow-lg px-10 pt-5  pb-8 rounded-sm my-5  flex-1 bg-stone-300 hover:bg-slate-100 hover:scale-105 ease-in duration-300 ">

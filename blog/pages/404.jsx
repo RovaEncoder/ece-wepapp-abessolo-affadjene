@@ -7,14 +7,14 @@ export default function Notfound() {
 	useEffect(() => {
 		setTimeout(() => {
 			route.push("/");
-		}, 4000);
+		}, 3000);
 	}, []);
 
 	return (
 		<div className="w-full md:h-screen flex items-center justify-center flex-col pt-20">
 			<h1>Oups</h1>
 			<p className="mt-2">
-				Cette page n'existe pas: redirection automatique dans 4s😎 !
+				Cette page n'existe pas: redirection automatique dans 3s😎 !
 			</p>
 			<p className="mt-2">
 				Retour à l'
