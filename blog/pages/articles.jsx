@@ -1,12 +1,42 @@
 import { FaSistrix } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { supabase } from "../utils/supabase";
 
-export default function Article({ articles }) {
+export default function Articles() {
+	const [loading, setLoading] = useState(true);
+	const [articles, setArticles] = useState([]);
+
+	useEffect(() => {
+		getArticle();
+	}, []);
+
+	async function getArticle() {
+		try {
+			setLoading(true);
+
+			let { data, error, status } = await supabase.from("articles").select("*");
+
+			if (error && status !== 406) {
+				throw error;
+			}
+
+			if (data) {
+				setArticles(data);
+				console.log(data);
+			}
+		} catch (error) {
+			alert("Error loading user data!");
+			console.log(error);
+		} finally {
+			setLoading(false);
+		}
+	}
 	return (
 		<div className="pt-20">
 			<div class=" mx-auto bg-slate-900 w-full flex justify-center py-10 ">
 				<div class="relative flex items-center max-w-sm w-full h-12 rounded-3xl focus-within:shadow-lg  overflow-hidden">
-					<button class="grid place-items-center h-full w-12 text-gray-300 bg-white">
+					<button class="grid place-items-center h-full w-12 text-gray-300 mr30 bg-white">
 						<FaSistrix size={23} />
 					</button>
 
@@ -28,29 +58,31 @@ export default function Article({ articles }) {
 								className=" text-center  flex flex-col justify-center pb-O items-center "
 							>
 								<img
-									src={article.urlToImage}
+									src={article.imageUrl}
 									className="rounded-sm object-cover"
 									width="100%"
 									height="100%"
 									layout="responsive"
 								/>
-								<p className="py-1">
+
+								{/* <p className="py-1">
 									Source:{" "}
 									<span className="text-lg font-medium text-teal-600 py-1">
-										{article.source.name}
+										{article.author}
 									</span>
-								</p>
+								</p> */}
+
 								<p className="text-gray-89 py-1">{article.title}</p>
 								<p className="text-gray-89 py-1 mb-2 text-justify text-lg font-medium max-w-2xl mx-auto">
-									{article.description}
+									{article.description.slice(0, 80) + "..."}
 								</p>
 							</div>
 						</div>
 						<div className="w-full h-auto flex items-center justify-center mb-2">
 							<button class="bg-sky-500 hover:bg-sky-500/50 text-white  p-0.5 rounded-sm flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-2 ">
-								<a href={article.url}>
+								<Link href={`/article/${article.id}`}>
 									<small>Read more ...</small>
-								</a>
+								</Link>
 							</button>
 						</div>
 					</div>
@@ -59,21 +91,3 @@ export default function Article({ articles }) {
 		</div>
 	);
 }
-
-export async function getStaticProps() {
-	const res = await fetch("http://localhost:3000/api/db");
-	const articles = await res.json();
-
-	return {
-		props: { articles },
-	};
-}
-
-// ≥≥
-// function SearchBar({ articles }) {
-// 	var search = document.getElementById(value);
-// 	articles.filter(articles.include(search));
-// }
-
-// Document.addEventListener("DOMContentLoaded", articles);
-// Autre methode: ustiliser fonction Search() puis prendre le resultat et afficher tous les elements avec resultat true

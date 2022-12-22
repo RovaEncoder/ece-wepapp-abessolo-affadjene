@@ -7,19 +7,19 @@ export default function Notfound() {
 	useEffect(() => {
 		setTimeout(() => {
 			route.push("/");
-		}, 3000);
+		}, 5000);
 	}, []);
 
 	return (
 		<div className="w-full md:h-screen flex items-center justify-center flex-col pt-20">
 			<h1>Oups</h1>
 			<p className="mt-2">
-				Cette page n'existe pas: redirection automatique dans 3s😎 !
+				Cette page n'existe pas: redirection automatique dans 5s ! 😎
 			</p>
 			<p className="mt-2">
 				Retour à l'
-				<Link href="/">
-					<a className="underline text-blue-400">Accueil</a>
+				<Link href="/" className="underline text-blue-400">
+					Accueil
 				</Link>
 			</p>
 		</div>

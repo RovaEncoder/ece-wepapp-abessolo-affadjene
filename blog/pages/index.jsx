@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "../layout/layout";
 import connaissance from "../public/images/connaissance.png";
+import { supabase } from "../utils/supabase";
 
-export default function Home({ articlesHomePages }) {
+export default function Home({ articles }) {
 	return (
 		<>
 			<Head>
@@ -55,39 +56,39 @@ export default function Home({ articlesHomePages }) {
 						<p>Articles les plus recents : </p>
 					</div>
 					<div className="flex px-20 py-10 gap-16 md:flex-row md:flex-wrap !bg-slate-800 ms:flex-col sm:flex-col min-w-[10%]:flex-col ">
-						{articlesHomePages.map((articlesHomePage) => (
-							<div className="basis-1/4 shadow-lg px-10 pt-5  pb-16 rounded-sm my-5 !bg-slate-700  flex-1 text-white">
+						{articles.map((article) => (
+							<div
+								key={article.id}
+								className="basis-1/4 shadow-lg px-10 pt-5  pb-16 rounded-sm my-5 !bg-slate-700  flex-1 text-white"
+							>
 								<div className="flex-col gap-10 lg:flex-row lg:flex-wrap   h-full">
-									<div
-										key={articlesHomePage.id}
-										className=" text-center  flex flex-col justify-center pb-O items-center "
-									>
+									<div className=" text-center  flex flex-col justify-center pb-O items-center ">
 										<img
-											src={articlesHomePage.urlToImage}
+											src={article.imageUrl}
 											className="rounded-sm object-cover"
 											width="100%"
 											height="100%"
 											layout="responsive"
 										/>
-										<p className="py-1">
-											Source:{" "}
+										{/* <p className="py-1">
+											Auteur:{" "}
 											<span className="text-lg font-medium text-teal-600 py-1">
-												{articlesHomePage.source.name}
+												{article.author}
 											</span>
-										</p>
-										<p className="text-gray-89 py-1">
-											{articlesHomePage.title}
-										</p>
+										</p> */}
+										<p className="text-gray-89 py-1">{article.title}</p>
 										<p className="text-gray-89 py-1 mb-2 text-justify text-lg font-medium max-w-2xl mx-auto">
-											{articlesHomePage.description}
+											{article.body.slice(0, 30) + " ....."}
 										</p>
 									</div>
 								</div>
 								<div className="w-full h-auto flex items-center justify-center">
 									<button class="bg-white hover:text-white hover:bg-sky-500/10 text-black font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3 ">
-										<a href={articlesHomePage.url}>
-											<small>Read more ...</small>
-										</a>
+										<Link scroll={true} href={`/article/${article.id}#top`}>
+											<a>
+												<small>Read more ...</small>
+											</a>
+										</Link>
 									</button>
 								</div>
 							</div>
@@ -109,10 +110,25 @@ export default function Home({ articlesHomePages }) {
 }
 
 export async function getStaticProps() {
-	const res = await fetch("http://localhost:3000/api/articles");
-	const articlesHomePages = await res.json();
+	const { data: articles, error } = await supabase
+		.from("articles")
+		.select("*")
+		.order("created_at", { ascending: false })
+		.limit(3);
+
+	// const { data: auteur, error } = await supabase
+	// 	.from("articles")
+	// 	.select("*")
+	// 	.eq("id", id)
+	// 	.single();
+
+	if (error) {
+		throw new Error(error);
+	}
 
 	return {
-		props: { articlesHomePages },
+		props: {
+			articles,
+		},
 	};
 }
