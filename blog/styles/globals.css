@@ -47,21 +47,9 @@
 	}
 }
 
-html,
-body {
-  --custom-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
- 
-
-  padding: 0;
-  margin: 0;
-
-}
-
 * {
 	color: var(--custom-color);
-	font-family: var(--custom-font-family);
+	font-family: fangsong;
 	box-sizing: border-box;
 }
 
@@ -591,7 +579,7 @@ button.primary,
 	padding-left: 60px;
 	border-left: 1px solid wheat;
 	position: sticky;
-	top: 50px;
+	top: 10px;
 }
 
 .author-left {
@@ -607,15 +595,16 @@ button.primary,
 	margin-left: 10px;
 }
 
-.article-img {
-	width: 100%;
-	height: 400px;
-}
-
 .article-img img {
 	object-fit: cover;
 	width: 100%;
 	height: 400px;
+	transition: all 0.2s;
+}
+
+.article-img img:hover {
+	transform: scale(0.98);
+	border-radius: 10px;
 }
 
 .article-itself {
@@ -625,6 +614,7 @@ button.primary,
 
 .infos-author {
 	font-size: 14px;
+	border-bottom: 1px solid gray;
 }
 
 .infos-author span {
@@ -632,21 +622,21 @@ button.primary,
 	padding-bottom: 2px;
 }
 
-.article-itself h1 {
+/* .article-itself h1 {
 	font-size: 45px;
 	text-align: center;
 	padding-top: 50px;
-}
+} */
 
 .article-itself > h2 {
-	padding-top: 10px;
-	font-size: 35px;
+	padding-top: 50px;
+	font-size: 30px;
 	text-align: center;
-	color: rgb(208, 203, 203);
+	color: rgb(47, 45, 45);
 }
 
 .article-section {
-	padding: 70px 30px;
+	padding: 10px 30px 70px 30px;
 }
 .article-section h2 {
 	padding: 0;
@@ -676,13 +666,72 @@ button.primary,
 
 .form-add input,
 textarea {
-	background-color: rgb(211, 201, 201);
+	background-color: white;
 	width: 100%;
 	margin-bottom: 20px;
-	font-size: 20px;
+	font-size: 30px;
+	outline: none !important;
 }
 
 .buttonsend {
 	background-color: rgb(151, 166, 161);
 	padding: 20px 50px;
+}
+
+.comments {
+	background-color: rgb(227, 247, 253);
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.each-comment {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+.comment-img img {
+	object-fit: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.comment-img span {
+	font-size: 10px;
+	margin-left: 0;
+}
+
+.add-comment {
+}
+.add-comment textarea {
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	padding: 20px;
+	background-color: white;
+}
+
+.add-comment textarea:focus {
+	outline: none !important;
+}
+
+.form-comment {
+	position: relative;
+}
+.send-comment {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.other-post {
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.other-post:hover {
+	box-shadow: 3px 3px 0.4em black;
 }

@@ -24,12 +24,12 @@ export default function Home({ articles }) {
 								<p className="my-2 text-lg mt-8">
 									Bonjour, nous sommes Abessolo et Affadjene, <br /> étudiants à
 									l'ECE-Paris, nous vous donnons l'oprotunité <br />
-									de rediger votre article et de le publiez 😊!
+									de rediger votre article et de le publiez ! 😊
 								</p>
 								<h3 className="my-5">
 									Le partage est l'un des principes les plus forts
 								</h3>
-								<button class="bg-white hover:bg-sky-500/10 hover:text-white mt-7 text-black  font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-2 ">
+								<button className="bg-white hover:bg-sky-500/10 hover:text-white mt-7 text-black  font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-2 ">
 									{/* link to the login page */}
 									<Link href="/login">
 										<small>Rediger...</small>
@@ -43,8 +43,8 @@ export default function Home({ articles }) {
 									<Image
 										className="rounded-xl shadow-xl shadow-black-500"
 										src={connaissance}
-										width={800}
-										height={500}
+										width="800"
+										height="500"
 										alt="connaisance"
 									/>
 								</div>
@@ -83,8 +83,8 @@ export default function Home({ articles }) {
 									</div>
 								</div>
 								<div className="w-full h-auto flex items-center justify-center">
-									<button class="bg-white hover:text-white hover:bg-sky-500/10 text-black font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3 ">
-										<Link scroll={true} href={`/article/${article.id}#top`}>
+									<button className="bg-white hover:text-white hover:bg-sky-500/10 text-black font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3 ">
+										<Link scroll={true} href={`/articles/${article.id}#top`}>
 											<a>
 												<small>Read more ...</small>
 											</a>
@@ -98,7 +98,7 @@ export default function Home({ articles }) {
 						<p className=" text-lg">
 							Allez à la page{"  "}
 							<span className="cursor-pointer font-bold text-yellow-300">
-								<Link href="/articles">article</Link>
+								<Link href="/articles/all">articles</Link>
 							</span>
 							{"  "}pour plus de contenu
 						</p>
@@ -115,12 +115,6 @@ export async function getStaticProps() {
 		.select("*")
 		.order("created_at", { ascending: false })
 		.limit(3);
-
-	// const { data: auteur, error } = await supabase
-	// 	.from("articles")
-	// 	.select("*")
-	// 	.eq("id", id)
-	// 	.single();
 
 	if (error) {
 		throw new Error(error);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/images/logo4.png";
+import logo from "../../public/images/logo4.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaAt, FaMobileAlt } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ export default function Navbar() {
 		setNavbar(!navbar);
 	};
 	return (
-		<div className="w-full h-20 shadow-2xl z-[100] fixed">
+		<div className="w-full h-20 shadow-2xl z-[100]">
 			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 !bg-slate-900 !text-white items-center justify-between">
 				<Link href="/">
 					<Image src={logo} width={90} height={50} />
@@ -29,7 +29,7 @@ export default function Navbar() {
 								A propos
 							</li>
 						</Link>
-						<Link href="/articles">
+						<Link href="/articles/all">
 							<li className="ml-10 uppercase hover:border-b-2 cursor-pointer">
 								Articles
 							</li>
@@ -79,16 +79,16 @@ export default function Navbar() {
 						<div className="py-20 flex flex-col">
 							<ul className="uppercase font-semibold ">
 								<Link href="/">
-									<li className=" text-sm  cursor-pointer py-4">Acueil</li>
+									<li className=" text-sm cursor-pointer py-4">Acueil</li>
 								</Link>
 								<Link href="/about">
 									<li className="text-sm cursor-pointer py-4 ">A propos</li>
 								</Link>
 								<Link href="/articles">
-									<li className=" text-sm  cursor-pointer py-4">Articles</li>
+									<li className=" text-sm cursor-pointer py-4">Articles</li>
 								</Link>
 								<Link href="/contact">
-									<li className=" text-sm  cursor-pointer py-4">Contact</li>
+									<li className=" text-sm cursor-pointer py-4">Contact</li>
 								</Link>
 							</ul>
 						</div>

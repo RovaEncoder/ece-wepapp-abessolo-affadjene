@@ -40,7 +40,7 @@ export default function About() {
 									<p>github </p>
 									<p>github </p>
 									<p>rova@gmail.com</p>
-									<button class="bg-sky-500 hover:bg-sky-500/50 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10 mt-2 ">
+									<button className="bg-sky-500 hover:bg-sky-500/50 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10 mt-2 ">
 										En savoir plus
 									</button>
 								</div>
@@ -74,7 +74,7 @@ export default function About() {
 									<p>github </p>
 									<p>github </p>
 									<p>rova@gmail.com</p>
-									<button class="bg-sky-500 hover:bg-sky-500/50 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10 mt-2 ">
+									<button className="bg-sky-500 hover:bg-sky-500/50 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10 mt-2 ">
 										En savoir plus
 									</button>
 								</div>

@@ -61,12 +61,12 @@ export default function Avatar({ uid, url, size, onUpload }) {
 				<img
 					src={avatarUrl}
 					alt="Avatar"
-					className="avatar image rounded-full bg-black"
+					className="avatar image rounded-xl"
 					style={{ height: size, width: size }}
 				/>
 			) : (
 				<div
-					className="avatar no-image rounded-xl"
+					className="avatar no-image"
 					style={{ height: size, width: size }}
 				/>
 			)}
