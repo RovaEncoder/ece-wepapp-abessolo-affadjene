@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+	body{
+		@apply dark:bg-slate-800 text-black bg-white dark:text-black 
+
+	}
 	h1,
 	h2,
 	h3,
@@ -33,19 +37,7 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-	body {
-		color: black;
-		background: #fff;
-		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-			"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-			"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-			"Noto Color Emoji";
-	}
-}
+
 
 * {
 	color: var(--custom-color);

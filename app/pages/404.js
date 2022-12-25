@@ -18,8 +18,8 @@ export default function Notfound() {
 			</p>
 			<p className="mt-2">
 				Retour à l'
-				<Link href="/">
-					<a className="underline text-blue-400">Accueil</a>
+				<Link className="underline text-blue-400" href="/">
+					Accueil
 				</Link>
 			</p>
 		</div>

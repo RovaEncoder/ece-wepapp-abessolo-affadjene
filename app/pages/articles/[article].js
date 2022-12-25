@@ -64,7 +64,7 @@ export default function Article({ currentArticle, articles }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<div className="container-article">
+				<div className="container-article dark:text-white/80">
 					<div className="article-div">
 						<div className="author-left">
 							<img
@@ -80,11 +80,15 @@ export default function Article({ currentArticle, articles }) {
 							</div>
 						</div>
 						<div className="article-img">
-							<h2 className="mt30 mb30">{currentArticle.title}</h2>
+							<h2 className="mt30 mb30 dark:text-sky-500">
+								{currentArticle.title}
+							</h2>
 							<img src={currentArticle.imageUrl} layout="responsive" />
 						</div>
 						<div className="article-itself">
-							<h3>{currentArticle.description}</h3>
+							<h3 className="dark:text-white/80">
+								{currentArticle.description}
+							</h3>
 							<div className="article-section">
 								<p>{currentArticle.body}</p>
 							</div>
@@ -95,6 +99,7 @@ export default function Article({ currentArticle, articles }) {
 							</div>
 							<form onSubmit={handleSubmit} className="form-comment">
 								<textarea
+									className="dark:bg-slate-800"
 									type="text"
 									name="addcomment"
 									placeholder="Ajouter un commentaire..."
@@ -104,14 +109,16 @@ export default function Article({ currentArticle, articles }) {
 								</button>
 							</form>
 						</div>
-						<div className="comments">
+						<div className="comments  dark:bg-slate-800">
 							{comments.map((comment) => (
 								<div className="mb20 each-comment">
 									<div className="comment-img">
 										<img src={comment.avatar_author} layout="responsive" />
-										<span className="ml20">{comment.name_author}</span>
+										<span className="ml20 dark:text-sky-500 ">
+											{comment.name_author}
+										</span>
 									</div>
-									<div className="mt10">{comment.content}</div>
+									<div className="mt10 dark:text-white">{comment.content}</div>
 								</div>
 							))}
 						</div>
