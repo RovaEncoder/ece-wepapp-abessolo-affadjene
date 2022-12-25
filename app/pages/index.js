@@ -15,7 +15,7 @@ export default function Home({ articles }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<div className="w-full h-full dark:bg-slate-900 pt-20 ">
+				<div className="w-full h-full dark:bg-slate-900 ">
 					<div className="w-full h-full text-start text-white ">
 						<div className=" w-full mx-auto h-5/6 flex justify-start bg-slate-900 ">
 							<div className="w-1/2 bg-gray-300  dark:bg-slate-900 p-10  border-white py-15">
