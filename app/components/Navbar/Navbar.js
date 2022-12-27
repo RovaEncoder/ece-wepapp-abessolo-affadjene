@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/images/logo4.png";
+import logo from "../../public/images/logo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useTheme } from "next-themes";
 import {
@@ -47,7 +47,6 @@ const changeTheme = () => {
 
 export default function Navbar() {
 	const [navbar, setNavbar] = useState(false);
-	const [darkMode, setDarktMode] = useState(false);
 	const currentUser = useUser();
 	const handleNav = () => {
 		setNavbar(!navbar);
@@ -57,7 +56,9 @@ export default function Navbar() {
 		<div id="top" className="w-full h-20 drop-shadow-md z-[100]">
 			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 dark:!bg-slate-900 bg-white  text-black dark:!text-white items-center justify-between">
 				<Link href="/">
-					<Image src={logo} width={90} height={50} />
+					<span className="cursor-pointer p-5 text-2xl text-orange-500">
+						ArtInfo
+					</span>
 				</Link>
 				{changeTheme()}
 				<div className="flex justify-center items-center">
@@ -91,7 +92,7 @@ export default function Navbar() {
 						) : (
 							<Link href="/profile">
 								<li className="ml-10 uppercase hover:border-b-4 dark:hover:border-white hover:border-black  cursor-pointer">
-									Mon profile
+									Mon profil
 								</li>
 							</Link>
 						)}

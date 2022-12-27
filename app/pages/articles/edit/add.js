@@ -3,8 +3,11 @@ import Layout from "../../../layout/layout";
 import React from "react";
 import Head from "next/head";
 import ArticleForm from "../../../components/ArticleForm/ArticleForm";
+import { useUser } from "@supabase/auth-helpers-react";
 
 export default function Post() {
+	const user = useUser();
+
 	async function handleSubmit(event) {
 		event.preventDefault();
 
@@ -18,12 +21,17 @@ export default function Post() {
 			body: content,
 			description,
 			imageUrl,
-			author: "07bf408c-a0c9-473e-8f9e-48a8f66c1ddb", // auth.uid() @ToReplace
+			user_id: user.id,
 		};
 		const { error } = await supabase.from("articles").insert(body);
 
 		if (error) {
 			console.log("Oups ! ", error.message);
+		} else {
+			event.target.title.value = "";
+			event.target.description.value = "";
+			event.target.content.value = "";
+			event.target.url.value = "";
 		}
 	}
 

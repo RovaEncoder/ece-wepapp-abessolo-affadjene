@@ -11,17 +11,15 @@ export default function Notfound() {
 	}, []);
 
 	return (
-		<div className="w-full md:h-screen flex items-center justify-center dark:text-white flex-col pt-20">
+		<div className="w-full md:h-screen flex items-center justify-center flex-col pt-20">
 			<h1>Oups</h1>
 			<p className="mt-2">
 				Cette page n'existe pas: redirection automatique dans 5s ! 😎
 			</p>
 			<p className="mt-2">
 				Retour à l'
-				<Link href="/">
-					<a className="underline text-blue-400 text-xl dark:yellow-400">
-						Acueil
-					</a>
+				<Link className="underline text-blue-400" href="/">
+					Accueil
 				</Link>
 			</p>
 		</div>

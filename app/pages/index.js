@@ -15,7 +15,7 @@ export default function Home({ articles }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<div className="w-full h-full dark:bg-slate-900 ">
+				<div className="w-full h-full dark:bg-slate-900 pt-20 ">
 					<div className="w-full h-full text-start text-white ">
 						<div className=" w-full mx-auto h-5/6 flex justify-start bg-slate-900 ">
 							<div className="w-1/2 bg-gray-300  dark:bg-slate-900 p-10  border-white py-15">
@@ -75,12 +75,6 @@ export default function Home({ articles }) {
 											height="100%"
 											layout="responsive"
 										/>
-										{/* <p className="py-1">
-											Auteur:{" "}
-											<span className="text-lg font-medium text-teal-600 py-1">
-												{article.author}
-											</span>
-										</p> */}
 										<p className="text-gray-89 py-1">{article.title}</p>
 										<p className="text-gray-89 py-1 mb-2 text-justify text-lg font-medium max-w-2xl mx-auto">
 											{article.body.slice(0, 30) + " ....."}

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaAt, FaMobileAlt } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<div className="flex flex-col w-full h-55 justify-center items-center drop-shadow-md bg-white dark:bg-slate-900 shadow-2xl footer-fix">
+		<div className="p-10 mt-20 flex flex-col w-full h-55 justify-center items-center drop-shadow-md bg-white dark:bg-slate-900 shadow-2xl footer-fix">
 			<p className="font-semibold text-black dark:text-white uppercase mt-5 text-lg">
 				Nous contacter
 			</p>
@@ -25,7 +25,7 @@ export default function Footer() {
 					</Link>
 				</div>
 				<div className="rounded-full shadow-lg shadow-black-100 p-3 bg-gray-300 dark:bg-slate-700 cursor-pointer hover:bg-slate-100 dark:hover:bg-white hover:scale-110 ease-in duration-300">
-					<Link href="callto:+33605549892">
+					<Link href="tel:+33605549892">
 						<FaMobileAlt size={30} />
 					</Link>
 				</div>
