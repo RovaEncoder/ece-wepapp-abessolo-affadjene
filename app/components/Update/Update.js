@@ -27,7 +27,7 @@ export default function Update() {
 			let { data, error, status } = await supabase
 				.from("profiles")
 				.select(`username, website, avatar_url`)
-				.eq("user_id", user.id)
+				.eq("user_id", user?.id)
 				.single();
 
 			if (error && status !== 406) {
@@ -52,7 +52,7 @@ export default function Update() {
 			setLoading(true);
 
 			const updates = {
-				id: user.id,
+				id: user?.id,
 				username,
 				website,
 				avatar_url,
@@ -74,7 +74,7 @@ export default function Update() {
 		<div className="form-widget">
 			<div>
 				<label htmlFor="email">Email</label>
-				<input id="email" type="text" value={user.email} disabled />
+				<input id="email" type="text" value={user?.email} disabled />
 			</div>
 			<div>
 				<label htmlFor="username">Username</label>

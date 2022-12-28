@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	reactStrictMode: false,  //ToChangeMayBe
+	reactStrictMode: false, //ToChangeMayBe
 	swcMinify: true,
 	images: {
 		remotePatterns: [
@@ -11,9 +11,6 @@ const nextConfig = {
 				pathname: "http://localhost:3000/api/db",
 			},
 		],
-	},
-	experimental: {
-		scrollRestoration: true,
 	},
 };
 
