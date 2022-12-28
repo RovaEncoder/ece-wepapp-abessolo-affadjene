@@ -125,15 +125,17 @@ export default function Article({ currentArticle, articles }) {
 					</div>
 					<div className="user-div">
 						<div className="mb50">
-							<div className="user-right-img">
-								<img
-									src={currentArticle.profiles.avatar_url}
-									layout="responsive"
-								/>
-								<span className="ml20 text-sky-500">
-									{currentArticle.profiles.full_name}
-								</span>
-							</div>
+							<Link href={`/profile/${currentArticle.profiles.user_id}`}>
+								<div className="user-right-img cursor-pointer">
+									<img
+										src={currentArticle.profiles.avatar_url}
+										layout="responsive"
+									/>
+									<span className="ml20 text-sky-500">
+										{currentArticle.profiles.full_name}
+									</span>
+								</div>
+							</Link>
 							<div className="mt20 ">{currentArticle.profiles.description}</div>
 						</div>
 						<span>Découvrir plus</span>

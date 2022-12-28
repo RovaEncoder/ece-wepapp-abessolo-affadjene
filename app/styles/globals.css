@@ -36,20 +36,6 @@
 	}
 }
 
-/* @media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-	body {
-		color: black;
-		background: #fff;
-		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-			"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-			"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-			"Noto Color Emoji";
-	}
-} */
-
 * {
 	color: var(--custom-color);
 	font-family: fangsong;
@@ -684,8 +670,8 @@ textarea {
 }
 
 .each-comment {
-	border-bottom: 1px solid gray;
-	padding-bottom: 10px;
+	border-top: 1px solid gray;
+	padding-top: 15px;
 }
 
 .comment-img img {
@@ -707,7 +693,7 @@ textarea {
 	outline: 0;
 	font-size: 18px;
 	padding: 20px;
-	background-color: black;
+	background-color: white;
 }
 
 .add-comment textarea:focus {
@@ -732,4 +718,43 @@ textarea {
 
 .other-post:hover {
 	box-shadow: 3px 3px 0.4em black;
+}
+.each-article {
+	background-color: re;
+}
+.profile-banner {
+	padding-top: 30px;
+}
+.profile-banner img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.profile-banner h2 {
+	padding-top: 50px;
+	font-size: 46px;
+}
+.profile-banner p {
+	border-bottom: 1px solid rgb(215, 210, 210);
+	margin-bottom: 70px;
+}
+
+.article-box {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	border-bottom: 1px solid rgb(212, 207, 207);
+}
+
+.article-box img {
+	width: 380px;
+	height: 180px;
+	object-fit: cover;
+	padding: 30px;
+	margin-left: 20px;
+}
+
+.flex-articles {
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
 }
