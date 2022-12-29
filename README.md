@@ -1,6 +1,6 @@
 # Projet WebApp : Blog appication
 
-## <a href="https://ece-wepapp-abessolo-affadjene.vercel.app" target="_blank" rel=""> <img src="../app/public/images/projetweb.png" alt="css3" width="80%" height="auto"/> </a>
+## <a href="https://ece-wepapp-abessolo-affadjene.vercel.app" target="_blank" rel=""> <img src="/app/public/images/projetweb.png" alt="css3" width="80%" height="auto"/> </a>
 
 This project is done in pairs with the aim of deepening and putting into practice the knowledge acquired in web technology courses.
 
@@ -8,11 +8,6 @@ This project is done in pairs with the aim of deepening and putting into practic
 
 - 😎&nbsp;<b>[Christ ABESSOLO](https://github.com/RovaEncoder)</b>
 - 🧑🏽‍💻&nbsp; <b>[Nabil AFADJENE](https://github.com/AFFADJENE)</b>
-
-## Fonctionalities:
-
-- [Home page](#home-page)
--
 
 ### Languages and Tools:
 
@@ -85,47 +80,47 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-###Preview : clic [Me](https://ece-wepapp-abessolo-affadjene.vercel.app) to see, I am on Vercel !😊
+### Preview : [clic Me](https://ece-wepapp-abessolo-affadjene.vercel.app) to see, I am on Vercel !😊
 
-##Fonctionalities
+## Fonctionalities
 
 ### Home page: it contents
 
-    -An navbar and footer
-    -Liste les trois dernier articles ecrits
-    -ckick on the "Redier" to write an article if we have are connected else whe have to login first
+-An navbar and footer
+-Liste les trois dernier articles ecrits
+-ckick on the "Redier" to write an article if we have are connected else whe have to login first
 
 ### Article page: it contents
 
-    -All  the articles whith a Searchbar
+-All the articles whith a Searchbar
 
 ### Login :
 
-    -We can login with github provider or email and password (when we have an account)
+-We can login with github provider or email and password (when we have an account)
 
 ### Profile page:
 
-    -This page display the information and the all articles of the current user if connected.
-    -Some others articles  we can click on them to see their content
+-This page display the information and the all articles of the current user if connected.
+-Some others articles we can click on them to see their content
 
 ### New articles creation:
 
-    -We can create a new article if we have an account and we are connected
+-We can create a new article if we have an account and we are connected
 
 ### New comment creation:
 
-    -When an user is connected he can comment articles
+-When an user is connected he can comment articles
 
 ### Account settings:
 
-    -User who is connected can set his infomation by clicking  on "Mes information" in his profile page
+-User who is connected can set his infomation by clicking on "Mes information" in his profile page
 
 ### Light/dark theme
 
-    -Users can switch mode  in dark or white by clicking on the button in the navbar
+- Users can switch mode in dark or white by clicking on the button in the navbar
 
-#Others fonctionalities:
+# Others fonctionalities:
 
-    - Whith the Searchbar:  it easy to seach an article
+- Whith the Searchbar: it easy to seach an article
 
 <h2 style="text-align: center;">Be enjoy to navigate an see all fonctionalitiese✨</h2>
