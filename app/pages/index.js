@@ -5,8 +5,11 @@ import Image from "next/image";
 import Layout from "../layout/layout";
 import connaissance from "../public/images/connaissance.png";
 import { supabase } from "../utils/supabase";
+import { useUser } from "@supabase/auth-helpers-react";
 
 export default function Home({ articles }) {
+	const currentUser = useUser();
+
 	return (
 		<>
 			<Head>
@@ -15,7 +18,7 @@ export default function Home({ articles }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<div className="w-full h-full dark:bg-slate-900 pt-20 ">
+				<div className="w-full h-full dark:bg-slate-900  ">
 					<div className="w-full h-full text-start text-white ">
 						<div className=" w-full mx-auto h-5/6 flex justify-start bg-slate-900 ">
 							<div className="w-1/2 bg-gray-300  dark:bg-slate-900 p-10  border-white py-15">
@@ -35,9 +38,15 @@ export default function Home({ articles }) {
 								</h3>
 								<button className="bg-slate-800 dark:bg-white dark:hover:bg-sky-500/10 hover:bg-white  hover:text-black mt-7 text:white dark:text-black  font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-2 ">
 									{/* link to the login page */}
-									<Link href="/login">
-										<small>Rediger...</small>
-									</Link>
+									{!currentUser ? (
+										<Link href="/login">
+											<small>Rediger...</small>
+										</Link>
+									) : (
+										<Link href="/arcticles/edit/add">
+											<small>Rediger...</small>
+										</Link>
+									)}
 								</button>
 							</div>
 							<div className="flex flex-col p-12 w-1/2  items-center bg-gray-300 dark:bg-slate-900">

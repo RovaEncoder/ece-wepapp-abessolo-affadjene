@@ -12,7 +12,6 @@ import {
 	FaAt,
 	FaMobileAlt,
 } from "react-icons/fa";
-import { useUser } from "@supabase/auth-helpers-react";
 
 //darkmode function
 const changeTheme = () => {
@@ -47,7 +46,6 @@ const changeTheme = () => {
 
 export default function Navbar() {
 	const [navbar, setNavbar] = useState(false);
-	const [darkMode, setDarktMode] = useState(false);
 	const currentUser = useUser();
 	const handleNav = () => {
 		setNavbar(!navbar);

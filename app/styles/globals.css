@@ -742,7 +742,7 @@ textarea {
 .article-box {
 	display: flex;
 	justify-content: center;
-	align-items: start;
+	align-items: flex-start;
 	border-bottom: 1px solid rgb(212, 207, 207);
 }
 

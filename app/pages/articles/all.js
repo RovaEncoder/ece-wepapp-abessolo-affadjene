@@ -21,7 +21,7 @@ export default function Articles({ arts }) {
 	}
 	return (
 		<Layout>
-			<div className="pt-20">
+			<div>
 				<div className=" mx-auto bg-gray-300 dark:bg-slate-900 w-full flex justify-center py-10 ">
 					<div className="relative flex items-center max-w-sm w-full h-12 rounded-3xl bg-white focus-within:shadow-lg  overflow-hidden">
 						<button className="grid place-items-center h-full w-12 text-gray-300 mr30 bg-white">
