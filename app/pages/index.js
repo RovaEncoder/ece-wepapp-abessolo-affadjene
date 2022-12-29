@@ -43,7 +43,7 @@ export default function Home({ articles }) {
 											<small>Rediger...</small>
 										</Link>
 									) : (
-										<Link href="/arcticles/edit/add">
+										<Link href="/articles/edit/add">
 											<small>Rediger...</small>
 										</Link>
 									)}

@@ -82,11 +82,23 @@ export default function ProfilePage({ profile }) {
 							)}
 
 							{user?.id === profile.user_id && (
-								<Link href="/profile/update">
-									<span className="cursor-pointertext-2xl text-lg text-orange-500">
-										Modifier mes informations
-									</span>
-								</Link>
+								<>
+									<Link href="/profile/update">
+										<span className="cursor-pointertext-2xl text-lg text-orange-500">
+											Modifier mes informations
+										</span>
+									</Link>
+
+									<button
+										className="button block"
+										onClick={() => {
+											router.push("/");
+											supabase.auth.signOut();
+										}}
+									>
+										Sign Out
+									</button>
+								</>
 							)}
 						</div>
 					</div>

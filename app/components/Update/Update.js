@@ -71,7 +71,7 @@ export default function Update() {
 	}
 
 	return (
-		<div className="form-widget">
+		<div className="form-widget flex items-center justify-center flex-col">
 			<div>
 				<label htmlFor="email">Email</label>
 				<input id="email" type="text" value={user?.email} disabled />
