@@ -71,14 +71,15 @@ export default function Update() {
 	}
 
 	return (
-		<div className="form-widget flex items-center justify-center flex-col">
-			<div>
+		<div className="form-widget flex items-center justify-center flex-col pt-20 dark:text-white">
+			<div className="dark:text-white">
 				<label htmlFor="email">Email</label>
 				<input id="email" type="text" value={user?.email} disabled />
 			</div>
 			<div>
 				<label htmlFor="username">Username</label>
 				<input
+					className="bg-gray-300"
 					id="username"
 					type="text"
 					value={username || ""}
@@ -88,6 +89,7 @@ export default function Update() {
 			<div>
 				<label htmlFor="website">Website</label>
 				<input
+					className="bg-gray-300"
 					id="website"
 					type="website"
 					value={website || ""}
@@ -97,7 +99,7 @@ export default function Update() {
 
 			<div>
 				<button
-					className="button primary block"
+					className="button primary block bg-gray-300"
 					onClick={() => updateProfile({ username, website, avatar_url })}
 					disabled={loading}
 				>
@@ -107,7 +109,7 @@ export default function Update() {
 
 			<div>
 				<button
-					className="button block"
+					className="button block bg-gray-300"
 					onClick={() => {
 						router.push("/");
 						supabase.auth.signOut();
