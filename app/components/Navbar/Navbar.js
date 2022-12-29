@@ -12,6 +12,7 @@ import {
 	FaAt,
 	FaMobileAlt,
 } from "react-icons/fa";
+import { useUser } from "@supabase/auth-helpers-react";
 
 //darkmode function
 const changeTheme = () => {
