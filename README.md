@@ -87,7 +87,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Home page: it contents
 
 - An navbar and footer
-- Liste les trois dernier articles ecrits
+- List the three latest articles.
 - ckick on the "Rediger" to write an article if we have are connected else whe have to login first
 
 ### Article page: it contents
@@ -121,6 +121,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Others fonctionalities:
 
-- Whith the Searchbar: it easy to seach an article
+- Whith the Searchbar: it easy to search an article
 
 <h2 style="text-align: center;">Be enjoy to navigate an see all fonctionalitiese✨</h2>

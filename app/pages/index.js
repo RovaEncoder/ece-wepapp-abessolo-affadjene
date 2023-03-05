@@ -31,7 +31,7 @@ export default function Home({ articles }) {
 								<p className="my-2 text-lg mt-8 text-black dark:text-white">
 									Bonjour, nous sommes Abessolo et Affadjene, <br /> étudiants à
 									l'ECE-Paris, nous vous donnons l'oprotunité <br />
-									de rediger votre article et de le publiez ! 😊
+									de rediger votre article et de le publier ! 😊
 								</p>
 								<h3 className="my-5 dark:text-white text-red-500">
 									Le partage est l'un des principes les plus forts
