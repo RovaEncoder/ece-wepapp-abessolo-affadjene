@@ -18,7 +18,10 @@ export default function Home({ articles }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<div className="w-full h-full dark:bg-slate-900  ">
+				<div className="w-full h-full text-2xl text-white flex  justify-center max-[767px]:items-center max-[767px]:fixed md:hidden z-[1000] max-[767px]:top-0 max-[767px]:left-0 sm:bottom-0 max-[767px]:right-0 max-[767px]:bg-gray-800 text-center">
+					<p>Ce site est disponible uniquement en version desktop</p>
+				</div>
+				<div className="w-full h-full dark:bg-slate-900 max-[767px]:hidden ">
 					<div className="w-full h-full text-start text-white ">
 						<div className=" w-full mx-auto h-5/6 flex justify-start bg-slate-900 ">
 							<div className="w-1/2 bg-gray-300  dark:bg-slate-900 p-10  border-white py-15">

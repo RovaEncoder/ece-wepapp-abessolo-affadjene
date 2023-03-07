@@ -53,7 +53,10 @@ export default function Navbar() {
 	};
 
 	return (
-		<div id="top" className="w-full h-20 drop-shadow-md z-[100]">
+		<div
+			id="top"
+			className="w-full h-20 drop-shadow-md z-[100] max-[767px]:hidden"
+		>
 			<div className="flex w-full h-full pl-5 pr-10 2xl:px-16 dark:!bg-slate-900 bg-white  text-black dark:!text-white items-center justify-between">
 				<Link href="/">
 					{/* <Image src={logo} width={90} height={50} /> */}
